@@ -1,0 +1,6 @@
+{
+  "name": "LaunderSync",
+  "description": "Effortless laundry and dry-cleaning management system with Pesapal and M-Pesa payment gateways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

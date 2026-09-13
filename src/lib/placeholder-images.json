@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "laundry-service-1",
+      "description": "Clean folded laundry on a table",
+      "imageUrl": "https://picsum.photos/seed/laundry1/600/400",
+      "imageHint": "clean laundry"
+    },
+    {
+      "id": "laundry-staff",
+      "description": "Professional laundry staff working",
+      "imageUrl": "https://picsum.photos/seed/laundry2/600/400",
+      "imageHint": "laundry worker"
+    }
+  ]
+}

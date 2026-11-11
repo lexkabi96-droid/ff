@@ -1,12 +1,19 @@
 
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import './globals.css';
 import { StoreProvider } from '@/context/store-context';
 import { Toaster } from '@/components/ui/toaster';
+import { RegisterServiceWorker } from '@/components/pwa/register-sw';
 
 export const metadata: Metadata = {
   title: 'LaunderSync',
   description: 'Effortless laundry and dry-cleaning management system with Pesapal and M-Pesa payment gateways.',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#3380CC',
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -25,6 +32,7 @@ export default function RootLayout({
         <StoreProvider>
           {children}
           <Toaster />
+          <RegisterServiceWorker />
         </StoreProvider>
       </body>
     </html>

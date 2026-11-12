@@ -8,21 +8,19 @@ Data currently lives in LocalStorage on the device.
 
 ## Phase 1 - this change
 
-- **Installable customer PWA**: web app manifest, service worker, mobile
-  viewport and SVG app icons. Customers add the booking portal to their
-  home screen and it keeps working offline.
-- **Multi-tenant foundation**: a Business (tenant) model and per-business
+- Installable customer PWA: manifest, service worker, mobile viewport,
+  SVG app icons. Customers add the booking portal to their home screen
+  and it keeps working offline.
+- Multi-tenant foundation: a Business (tenant) model and per-business
   service categories, so any service business - not just laundry - can
   live on the platform.
-- **QR pickup and drop-off verification**:
+- QR pickup and drop-off verification:
   - Every pickup and order now gets a QR token.
   - /qr prints a label sheet to attach to bags or job tickets.
   - /scan is a camera-based verifier for staff: scan FF://PICKUP/... to
     confirm collection (auto-creates the order), scan FF://ORDER/... to
     confirm drop-off, with manual code entry as fallback.
-- **Service-agnostic booking portal**: the customer portal now offers a
-  service selector (laundry, cleaning, repairs, grooming, other) instead
-  of laundry-only wording.
+- Service-agnostic booking portal with a service selector.
 
 ## Phase 2 - real backend
 
